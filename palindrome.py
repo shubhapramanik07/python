@@ -17,6 +17,7 @@ else:
      
 
 ##time_compexity will be O(log10 n)
+##space complexity will be O(1)
 
 
 # is_palindrome(n)
