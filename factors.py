@@ -23,7 +23,9 @@
 
 
 
-#another method to solve the problem.....
+#another method to solve the problem.....(optimal_solution)
+
+
 from math import sqrt
 arr = []
 num = 20
@@ -36,16 +38,8 @@ print("factors_of_", num, "=", sorted(arr))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# time_complexity: O(sqrt(n)) + O(nlogn)
+# space_complexity: O(k)
+# where k is the number of factors of n 
+# and nlogn is for sorting the array.
+# *** whenever you are given a number n, you can find its factors using the above method in O(sqrt(n)) time.
