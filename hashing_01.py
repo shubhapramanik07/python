@@ -40,15 +40,15 @@
 
 # using hashing we can solve it 
 
-n = [7,69,2,0,11,3,3,1,10]
-m = [1,2,3,3,4,3,9,10,1,0,7]
+# n = [7,69,2,0,11,3,3,1,10]
+# m = [1,2,3,3,4,3,9,10,1,0,7]
 
-hash_map = {}
-for num in n:
-    hash_map[num] = hash_map.get(num, 0) + 1
+# hash_map = {}
+# for num in n:
+#     hash_map[num] = hash_map.get(num, 0) + 1
 
-for num in m:
-    print(hash_map.get(num, 0))
+# for num in m:
+#     print(hash_map.get(num, 0))
 
 
 
@@ -57,6 +57,13 @@ s = "axhdisgrhdia"
 q = ["d", "a", "x", "z", "h", "i"]
 char_map = {}
 for char in s:
-    char_map[char] = char_map.get(char, 0) + 1
+    ascii_value = ord(char) - ord('a')  # Calculate index based on 'a'
+    char_map[ascii_value] = char_map.get(ascii_value, 0) + 1
 for char in q:
-    print(char_map.get(char, 0))
+    ascii_value = ord(char) - ord('a')
+    print(char_map.get(ascii_value, 0))
+
+
+
+
+#i have to revise this concept again.......................
