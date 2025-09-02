@@ -2,3 +2,31 @@
 
     #* here in python it calls itself by default limit of 987 times
 
+#we are studying head recursion which means the recursive call is the first statement in the function. and tail recursion means the recursive call is the last statement in the function.
+
+
+
+
+# from itertools import count
+def func(count):
+    # Head recursion
+    if count == 4:
+        return
+    print("shubha_pramanik")
+    func(count + 1)
+
+
+def func_tail(count):
+    # Tail recursion
+    if count == 4:
+        return
+    func_tail(count + 1)
+    print("pramanik_shubha")
+
+
+# Run both
+print("Head Recursion Output:")
+func(0)
+
+print("\nTail Recursion Output:")
+func_tail(0)
