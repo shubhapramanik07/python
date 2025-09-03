@@ -12,7 +12,7 @@ def func(count):
     # Head recursion
     if count == 4:
         return
-    print("shubha_pramanik")
+    print("shubha")
     func(count + 1)
 
 
@@ -21,7 +21,7 @@ def func_tail(count):
     if count == 4:
         return
     func_tail(count + 1)
-    print("pramanik_shubha")
+    print("pramanik")
 
 
 # Run both
@@ -30,3 +30,5 @@ func(0)
 
 print("\nTail Recursion Output:")
 func_tail(0)
+
+# i want to push it into github
