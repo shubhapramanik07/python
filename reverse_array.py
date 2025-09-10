@@ -11,10 +11,14 @@ def reverse_array(arr, start, end):
     arr[start], arr[end] = arr[end], arr[start]
     reverse_array(arr, start+1, end-1)
 
-def reverse(arr, start, end):
-    reverse_array(arr, start, end)
-    return arr
 
-print(reverse(arr, 1, 2))  # reversing from index 1 to 5
+# def reverse(arr, start, end):
+#     reverse_array(arr, start, end)
+#     return arr
+
+reverse_array(arr, 0, 5)# reversing from index 0 to 5
+print(arr)
+
+
 # time complexity is O(n/2) = O(n)
-# space complexity is O(n) due to call stack
+# space complexity is O(n/2) = O(n) due to call stack
